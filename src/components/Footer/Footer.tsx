@@ -1,19 +1,15 @@
 import Link from "next/link";
 
-export default function Navbar() {
+export default function Footer() {
   return (
-    <nav>
+    <>
       <div>
         <Link href="/">DevTon</Link>
-      </div>
-      <div>
-        <Link href="#">Projects</Link>
-        <Link href="#">What&#39;s next</Link>
       </div>
       <div>
         <Link href="#">Whatsapp</Link>
         <Link href="#">Github</Link>
       </div>
-    </nav>
+    </>
   );
 }

@@ -1,18 +1,19 @@
 import { render } from "@testing-library/react";
 import Hero from "./Hero";
 
-const sum = (x: number, y: number) => {
-  return x + y;
-};
-
 describe("Hero Component", () => {
-  it("should sum correctly", () => {
-    expect(sum(4, 4)).toBe(8);
-  });
-
-  it("should render hero with 'I'm Ewerton - Full Stack Developer & UI / UX Designer' message", () => {
+  it("should render main message", () => {
     const { getByText } = render(<Hero />);
 
     expect(getByText(/I'm Ewerton - Full Stack Developer & UI UX Designer/i));
+  });
+  it("should render secondary message", () => {
+    const { getByText } = render(<Hero />);
+
+    expect(
+      getByText(
+        /Creation and maintance of web applications in React and Django./i
+      )
+    );
   });
 });

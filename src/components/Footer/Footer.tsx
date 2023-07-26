@@ -4,16 +4,26 @@ export default function Footer() {
   return (
     <footer className="h-52 bg-slate-700 text-white flex items-center justify-between px-5 md:px-20">
       <div>
-        <Link href="/">DevTon</Link>
+        <Link className="underline" href="/">
+          DevTon
+        </Link>
       </div>
-      <ul className="">
+      <ul className="flex gap-5">
         <li>
-          <Link className="ml-10" href="#">
+          <Link
+            target="_blank"
+            className="underline"
+            href="https://wa.me//5584988633633"
+          >
             Whatsapp
           </Link>
         </li>
         <li>
-          <Link className="ml-10" href="#">
+          <Link
+            target="_blank"
+            className="underline"
+            href="https://github.com/Ewerton12f"
+          >
             Github
           </Link>
         </li>

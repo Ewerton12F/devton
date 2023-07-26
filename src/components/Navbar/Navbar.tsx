@@ -92,23 +92,13 @@ export default function Navbar() {
           </h1>
           <ul className="md:flex hidden">
             <li>
-              <Link className="ml-10 lg:ml-20" href="#">
+              <Link className="ml-10 lg:ml-20 underline" href="#me">
+                About Me
+              </Link>
+            </li>
+            <li>
+              <Link className="ml-10 lg:ml-20 underline" href="#projects">
                 Projects
-              </Link>
-            </li>
-            <li>
-              <Link className="ml-10 lg:ml-20" href="#">
-                What&#39;s next
-              </Link>
-            </li>
-            <li>
-              <Link className="ml-10 lg:ml-20" href="#">
-                Whatsapp
-              </Link>
-            </li>
-            <li>
-              <Link className="ml-10 lg:ml-20" href="#">
-                Github
               </Link>
             </li>
           </ul>

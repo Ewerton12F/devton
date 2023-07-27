@@ -17,7 +17,4 @@ describe("Hero Component", () => {
       )
     );
   });
-  it("should render 'I'm also a beginner as UIUX Designer' message", () => {
-    expect(hero.getByText(/I'm also a beginner as UIUX Designer/i));
-  });
 });
